@@ -51,7 +51,7 @@ async function sendEmail(payload, message) {
   
   const mailOptions = {
     from: "Portfolio", 
-    to: process.env.EMAIL_ADDRESS, 
+    to: "ashwinsankar67@gmail.com", // Changed to always send to your email
     subject: `New Message From ${name}`, 
     text: message, 
     html: generateEmailTemplate(name, email, userMessage), 
